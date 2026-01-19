@@ -1,0 +1,86 @@
+.profile-form-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.profile-steps {
+  margin-bottom: var(--spacing-2xl);
+}
+
+.profile-form {
+  background: var(--bg-primary);
+  padding: var(--spacing-2xl);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.form-step {
+  min-height: 200px;
+  animation: fadeIn var(--transition-slow);
+}
+
+.step-title {
+  font-size: var(--font-size-2xl);
+  font-weight: 600;
+  margin-bottom: var(--spacing-xl);
+  color: var(--text-primary);
+  text-align: center;
+}
+
+/* Calendar & Availability */
+.calendar-container {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-sm);
+  background: var(--bg-primary);
+}
+
+.availability-section {
+  margin-top: var(--spacing-lg);
+}
+
+.events-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.events-list li {
+  margin-top: 2px;
+}
+
+/* Override Antd Calendar Styles if needed for small container */
+:where(.css-dev-only-do-not-override-190m0j).ant-picker-calendar-mini {
+  border: none;
+}
+
+/* Form Actions */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-xl);
+  padding-top: var(--spacing-xl);
+  border-top: 1px solid var(--border-color);
+}
+
+.form-actions button {
+  min-width: 120px;
+  height: 48px;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .profile-form {
+    padding: var(--spacing-lg);
+  }
+
+  .time-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-step {
+    min-height: 300px;
+  }
+}

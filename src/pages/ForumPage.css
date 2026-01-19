@@ -1,0 +1,122 @@
+.forum-page {
+  min-height: calc(100vh - 64px);
+  padding: var(--spacing-2xl) 0;
+}
+
+.forum-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.filter-card {
+  margin-bottom: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+}
+
+.filter-controls {
+  display: flex;
+  gap: var(--spacing-md);
+  align-items: center;
+}
+
+.posts-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.post-card {
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-base);
+}
+
+.post-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+.post-header {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.post-meta {
+  flex: 1;
+}
+
+.post-title {
+  margin: 0 0 var(--spacing-xs) 0;
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.post-info {
+  display: flex;
+  gap: var(--spacing-md);
+  font-size: var(--font-size-sm);
+}
+
+.author-name {
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.post-time {
+  color: var(--text-tertiary);
+}
+
+.post-content {
+  margin: 0 0 var(--spacing-md) 0;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--border-color);
+}
+
+.post-tags {
+  display: flex;
+  gap: var(--spacing-xs);
+}
+
+.post-stats {
+  display: flex;
+  gap: var(--spacing-lg);
+  color: var(--text-tertiary);
+  font-size: var(--font-size-sm);
+}
+
+.post-stats span {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+@media (max-width: 768px) {
+  .forum-header {
+    flex-direction: column;
+    gap: var(--spacing-md);
+    align-items: flex-start;
+  }
+
+  .forum-header button {
+    width: 100%;
+  }
+
+  .filter-controls {
+    flex-direction: column;
+  }
+
+  .filter-controls > * {
+    width: 100% !important;
+  }
+}

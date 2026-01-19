@@ -1,0 +1,15 @@
+.main-layout {
+  min-height: 100vh;
+  background: var(--bg-secondary);
+}
+
+.main-content {
+  padding: var(--spacing-2xl) 0;
+  min-height: calc(100vh - 64px);
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: var(--spacing-lg) 0;
+  }
+}

@@ -1,0 +1,126 @@
+.speaking-page {
+  min-height: calc(100vh - 64px);
+  padding: var(--spacing-2xl) 0;
+}
+
+.speaking-header {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.speaking-content {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.question-card {
+  border-radius: var(--radius-lg);
+}
+
+.part-selector {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+.part-selector label {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.question-content {
+  padding: var(--spacing-xl);
+  background: var(--bg-secondary);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+.question-content h2 {
+  margin: var(--spacing-md) 0 0;
+  font-size: var(--font-size-xl);
+  color: var(--text-primary);
+}
+
+.recording-controls {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-md);
+}
+
+.record-btn {
+  min-width: 180px;
+  height: 48px;
+  font-weight: 600;
+}
+
+.record-btn.recording {
+  animation: pulse 2s infinite;
+}
+
+/* Feedback */
+.feedback-card {
+  border-radius: var(--radius-lg);
+}
+
+.feedback-scores {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+.score-item span {
+  display: block;
+  margin-bottom: var(--spacing-xs);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.estimated-band {
+  text-align: center;
+  padding: var(--spacing-xl);
+  background: var(--primary-gradient);
+  border-radius: var(--radius-md);
+  color: white;
+  margin-bottom: var(--spacing-xl);
+}
+
+.estimated-band h3 {
+  margin: 0 0 var(--spacing-sm) 0;
+  color: white;
+  opacity: 0.9;
+}
+
+.band-score {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.feedback-section {
+  margin-bottom: var(--spacing-lg);
+}
+
+.feedback-section h4 {
+  margin: 0 0 var(--spacing-md) 0;
+  color: var(--text-primary);
+}
+
+.feedback-section ul {
+  margin: 0;
+  padding-left: var(--spacing-lg);
+}
+
+.feedback-section li {
+  margin-bottom: var(--spacing-sm);
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .feedback-scores {
+    grid-template-columns: 1fr;
+  }
+}
